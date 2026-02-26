@@ -10,7 +10,8 @@ from streamlit_option_menu import option_menu
 # -----------------------------
 # Load Models
 # -----------------------------
-used_car_model = pickle.load(open("used_cars_model.sav", "rb"))
+# แก้ไขให้ตรงกับชื่อไฟล์ใน GitHub (Case Sensitive)
+used_car_model = pickle.load(open("Used_cars_model.sav", "rb"))
 riding_model = pickle.load(open("RidingMowers_model.sav", "rb"))
 bmi_model = pickle.load(open("bmi_model.sav", "rb"))
  
@@ -132,3 +133,4 @@ elif selected == "BMI":
  
         except:
             st.error("กรอกข้อมูลให้ครบ")
+
